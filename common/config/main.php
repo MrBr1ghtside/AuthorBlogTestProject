@@ -14,7 +14,7 @@ return [
     'modules' => [
         'user' => [
             'class' => 'dektrium\user\Module',
-            'enableConfirmation' => true, 
+            'enableConfirmation' => false, 
         ],
     ],
 ];

@@ -11,7 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'defaultRoute' => 'site/index',
-    'layout' => 'blog',
+    'layout' => 'main',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
@@ -47,5 +47,11 @@ return [
         ],
         */
     ],
+    /*'modules' => [
+        'user' => [
+            // following line will restrict access to admin controller from frontend application
+            'as frontend' => 'dektrium\user\filters\FrontendFilter',
+        ],
+    ],*/
     'params' => $params,
 ];
