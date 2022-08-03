@@ -349,9 +349,9 @@ AppAsset::register($this);
 	<!-- Footer end -->
 
 	<!-- Scripts -->
+	<script src="js/main.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/main.js"></script>
 
 
 	<?php $this->endBody() ?>
