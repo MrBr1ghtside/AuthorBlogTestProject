@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "990be5f13120255287708cf4047d8202",
+    "content-hash": "af12c4581be4acb6a002a7827bcc30b6",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
+                "url": "git@github.com:twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -305,6 +305,56 @@
                 }
             ],
             "time": "2022-02-28T11:07:21+00:00"
+        },
+        {
+            "name": "dvizh/yii2-seo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dvizh/yii2-seo.git",
+                "reference": "99efdc21606233908eb9ce68a82f2bb60327fece"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dvizh/yii2-seo/zipball/99efdc21606233908eb9ce68a82f2bb60327fece",
+                "reference": "99efdc21606233908eb9ce68a82f2bb60327fece",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-bootstrap": "*"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dvizh\\seo\\": "src\\"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ilya Pistol + Ivan Kartonka",
+                    "email": "admin@nethammer.ru"
+                }
+            ],
+            "description": "Модуль позволяет привязывать SEO поля к моделям",
+            "homepage": "https://github.com/dvizh/yii2-seo",
+            "keywords": [
+                "application",
+                "dvizh",
+                "seo",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/dvizh/yii2-seo/issues",
+                "source": "https://github.com/dvizh/yii2-seo"
+            },
+            "time": "2018-02-05T13:09:00+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -7183,7 +7233,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kartik-v/yii2-widgets": 20
+        "kartik-v/yii2-widgets": 20,
+        "dvizh/yii2-seo": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
