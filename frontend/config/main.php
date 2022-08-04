@@ -11,7 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'defaultRoute' => 'site/index',
-    'layout' => 'blog',
+    'layout' => 'main',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'request' => [
@@ -46,6 +46,10 @@ return [
             ],
         ],
         */
+    'mailer'=>[
+        'class'=> 'yii\swiftmailer\Mailer'
+    ],
+
     ],
     /*'modules' => [
         'user' => [
