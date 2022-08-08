@@ -34,10 +34,10 @@ AppAsset::register($this);
 			<div class="main-navigation">
 				<ul class="main-navigation__ul">
 					<li><a href="#">Homepage</a></li>
-					<li><a href="#">Page 1</a></li>
-					<li><a href="#">Page 2</a></li>
-					<li><a href="#">Page 3</a></li>
-					<li><a href="#">Page 4</a></li>
+					<li><?= Html::a(Yii::t('user', 'Sign in!'), ['/user/security/login']) ?></li>
+					<li><a href="../views/index/contact.php">Sign Up 2</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
 			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
@@ -70,7 +70,7 @@ AppAsset::register($this);
 					<h2 class="top-banner__h2">Smith</h2>
 					<span class="brand-span">Author, Writer, Traveler</span>
 				</div>
-				<p>One Man. One Mission. Can He Go Beyond?One Man. One Mission. Can He Go Beyond?</p>
+				<p>One Man. One Mission. Can He Go Beyond? One Man. One Mission. Can He Go Beyond?</p>
 				<a href="#" class="brand-button">Read bio > </a>
 			</div>
 		</div>
@@ -335,7 +335,7 @@ AppAsset::register($this);
 		</div>
 		<div class="footer-bottom">
 			<div class="site-container footer-bottom-inner">
-				<p>© 2019 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
+				<p>© 2022 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
 				<div class="footer-bottom__img">
 					<img src="./images/footer-mastercard.png" alt="footer image">
 					<img src="./images/footer-paypal.png" alt="footer image">
@@ -349,9 +349,7 @@ AppAsset::register($this);
 	<!-- Footer end -->
 
 	<!-- Scripts -->
-	<script src="js/main.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/slick.min.js"></script>
+
 
 
 	<?php $this->endBody() ?>
