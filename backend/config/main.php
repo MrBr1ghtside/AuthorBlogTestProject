@@ -15,6 +15,10 @@ return [
         'gii'=>[
             'class'=>'yii\gii\Module'
         ],
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+            'layout' => 'main', 
+        ],
     ],
     'components' => [
         'request' => [
