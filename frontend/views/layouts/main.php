@@ -38,6 +38,7 @@ AppAsset::register($this);
 					<li><?= Html::a('Sign in', ['/user/registration/register']) ?></li>
 					<li><?= Html::a('Login', ['/user/security/login']) ?></li>
 					<li><?= Html::a('Contact', ['/site/contact']) ?></li>
+					<li><?= Html::a('Feedback', ['/site/feedback']) ?></li>
 				</ul>
 			</div>
 			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
