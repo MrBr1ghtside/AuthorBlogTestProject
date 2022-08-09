@@ -38,14 +38,15 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
-        'urlManager' => [
+        
+        /*'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => false,
             'rules' => [
             ],
-        ],
-        */
+        ],*/
+        
     'mailer'=>[
         'class'=> 'yii\swiftmailer\Mailer'
     ],
