@@ -3,21 +3,20 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%author}}`.
+ * Handles the creation of table `{{%authors}}`.
  */
-class m220728_073953_create_author_table extends Migration
+class m220810_052034_create_authors_table extends Migration
 {
     /**
      * {@inheritdoc}
      */
     public function safeUp()
     {
-        $this->createTable('{{%author}}', [
+        $this->createTable('{{%authors}}', [
             'id' => $this->primaryKey(),
-            'title' => $this->string(50)->notNull(),
-            'text' => $this->text(),
             'name' => $this->string(255)->notNull(),
-        
+            'text' => $this->text(),
+            
         ]);
     }
 
@@ -26,6 +25,6 @@ class m220728_073953_create_author_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%author}}');
+        $this->dropTable('{{%authors}}');
     }
 }
