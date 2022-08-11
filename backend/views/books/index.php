@@ -6,7 +6,7 @@ use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\BooksSearch */
+/* @var $searchModel backend\models\BooksSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Books';
