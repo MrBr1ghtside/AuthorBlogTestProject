@@ -11,7 +11,7 @@ class Books extends ActiveRecord
 {
     public static function tableName()
     {
-    return 'books'; // Имя таблицы в БД в которой хранятся записи блога
+    return 'books';
     }   
 
     public static function getAll()
