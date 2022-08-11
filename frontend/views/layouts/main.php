@@ -25,9 +25,9 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head> 
-<body>
+<body class="d-flex flex-column h-100">
 	<?php $this->beginBody() ?>
-
+<headler class="site-headler">
 	<!-- Navigation -->
 	<nav class="site-navigation">
     <div class="site-navigation-inner site-container">
@@ -60,7 +60,7 @@ AppAsset::register($this);
         	]) ?>
         	<?= Alert::widget() ?>
        		<?= $content ?>
-	
+</headler>
 	<!-- Footer -->
 	<footer class="site-footer">
 		<div class="site-container">
@@ -97,9 +97,6 @@ AppAsset::register($this);
 		</div>
 	</footer>
 	<!-- Footer end -->
-
-	<!-- Scripts -->
-
 
 	<?php $this->endBody() ?>
 
