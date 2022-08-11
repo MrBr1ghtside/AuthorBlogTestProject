@@ -17,4 +17,13 @@ class BooksController extends Controller
         return $this->render('index');
     }
 
+    public function actionView($id)
+    {
+        $books = Books::find()->where(['id' => $id])->one();
+
+      if ($books) {
+        return $this->render('view', ['model' => $books]);
+      }
+      throw new \yii\web\NotFoundHttpException("Пост не найден");
+    }
 }
