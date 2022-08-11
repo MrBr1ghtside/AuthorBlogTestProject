@@ -2,7 +2,7 @@
 
 namespace backend\controllers;
 
-use app\models\Books;
+use backend\models\Books;
 use backend\models\BooksSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;

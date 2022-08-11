@@ -10,6 +10,9 @@ use Yii;
  * @property int $id
  * @property string $book_name
  * @property float|null $price
+ * @property string|null $description
+ *
+ * @property Feedbacks[] $feedbacks
  */
 class Books extends \yii\db\ActiveRecord
 {
@@ -29,6 +32,7 @@ class Books extends \yii\db\ActiveRecord
         return [
             [['book_name'], 'required'],
             [['price'], 'number'],
+            [['description'], 'string'],
             [['book_name'], 'string', 'max' => 50],
         ];
     }
@@ -42,6 +46,17 @@ class Books extends \yii\db\ActiveRecord
             'id' => 'ID',
             'book_name' => 'Book Name',
             'price' => 'Price',
+            'description' => 'Description',
         ];
+    }
+
+    /**
+     * Gets query for [[Feedbacks]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getFeedbacks()
+    {
+        return $this->hasMany(Feedbacks::className(), ['books_id' => 'id']);
     }
 }

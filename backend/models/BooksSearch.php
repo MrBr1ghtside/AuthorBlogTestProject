@@ -18,7 +18,7 @@ class BooksSearch extends Books
     {
         return [
             [['id'], 'integer'],
-            [['book_name'], 'safe'],
+            [['book_name', 'description'], 'safe'],
             [['price'], 'number'],
         ];
     }
@@ -63,7 +63,8 @@ class BooksSearch extends Books
             'price' => $this->price,
         ]);
 
-        $query->andFilterWhere(['like', 'book_name', $this->book_name]);
+        $query->andFilterWhere(['like', 'book_name', $this->book_name])
+            ->andFilterWhere(['like', 'description', $this->description]);
 
         return $dataProvider;
     }
