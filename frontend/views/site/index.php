@@ -1,5 +1,5 @@
 <?php
-
+use yii\bootstrap4\Html;
 /** @var yii\web\View $this */
 
 $this->title = 'Author Blog';
@@ -20,7 +20,7 @@ $this->title = 'Author Blog';
 					<span class="brand-span">Author, Writer, Traveler</span>
 				</div>
 				<p>One Man. One Mission. Can He Go Beyond? One Man. One Mission. Can He Go Beyond?</p>
-				<a href="#" class="brand-button">Read bio > </a>
+				<p class="brand-button"><?= Html::a('Read bio >', ['authors/authors']) ?> </p>
 			</div>
 		</div>
 	</section>
@@ -65,7 +65,7 @@ $this->title = 'Author Blog';
 	<!-- Books and CD -->
 	<section class="fh5co-books">
 		<div class="site-container">
-			<h2 class="universal-h2 universal-h2-bckg">New Books And CD</h2>
+			<h2 class="universal-h2 universal-h2-bckg">New Books</h2>
 			<div class="books">
 				<div class="single-book">
 					<a href="#" class="single-book__img">
@@ -127,6 +127,7 @@ $this->title = 'Author Blog';
 				</div>
 			</div>
 			<div class="books-brand-button">
+				<p class="brand-button"><?= Html::a('View more', ['books/books']) ?> </p>
 				<a href="#" class="brand-button">View more</a>
 			</div>
 		</div>
