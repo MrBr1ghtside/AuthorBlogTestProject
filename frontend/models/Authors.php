@@ -6,9 +6,17 @@ use Yii;
 use yii\base\Model;
 use yii\db\ActiveRecord;
 
-
 class Authors extends ActiveRecord
 {
+    function behaviors()
+    {
+        return [
+            'seo' => [
+                'class' => 'dvizh\seo\behaviors\SeoFields',
+            ],
+        ];
+    }
+
     public static function tableName()
     {
     return 'authors'; // Имя таблицы в БД в которой хранятся записи блога
