@@ -4,6 +4,8 @@ namespace app\models;
 
 use Yii;
 
+use yii\behaviors\TimestampBehavior;
+
 /**
  * This is the model class for table "posts".
  *
@@ -17,6 +19,19 @@ class Posts extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'created_at',
+                'updatedAtAttribute' => false,
+                'value' => time(),
+            ],
+        ];
+    }
+
     public static function tableName()
     {
         return 'posts';

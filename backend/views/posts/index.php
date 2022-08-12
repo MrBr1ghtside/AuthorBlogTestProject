@@ -33,10 +33,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'created_at',
             'text',
             [
-                'class' => ActionColumn::className(),
-                'urlCreator' => function ($action, Posts $model, $key, $index, $column) {
-                    return Url::toRoute([$action, 'id' => $model->id]);
-                 }
+                'attribute' =>'created_at',
+                'value' => function($model) {
+                    return date('d.m.Y H:i', $model->created_at);
+                }
             ],
         ],
     ]); ?>
