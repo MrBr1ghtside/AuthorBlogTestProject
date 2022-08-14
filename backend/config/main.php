@@ -11,6 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log', 'gii'],
+    'defaultRoute' => 'site/index',
     'modules' => [
         'gii'=>[
             'class'=>'yii\gii\Module'
