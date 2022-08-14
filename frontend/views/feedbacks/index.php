@@ -1,3 +1,9 @@
+<?php
+use yii\grid\GridView;
+
+?>
+
+
 <section class="fh5co-quotes">
 		<div class="site-container">
 			<div class="about-me-slider">

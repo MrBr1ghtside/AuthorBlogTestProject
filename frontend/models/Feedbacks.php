@@ -8,16 +8,29 @@ use yii\db\ActiveRecord;
 
 
 class Feedbacks extends ActiveRecord
-{
+{   
+
+    const STATUS_READER = 0; //Константа статуса для читателя
+    const STATUS_WRITER = 10;  //Константа статуса для писателя
+
     public static function tableName()
     {
-    return 'feedback';
+    return 'feedbacks';
     }   
 
     public static function getAll()
     {
         $data = self::find()->all();
         return $data;
+    }
+
+    public function getBooks()
+    {
+        return $this->hasOne(Books::className(), ['id' => 'books_id']);
+    }
+
+    public function getBooksName() {
+        return $this->books->book_name;
     }
 
 }
