@@ -20,7 +20,7 @@ class m220811_055458_create_feedbacks_table extends Migration
             'title' => $this->string(50)->notNull(),
             'text' => $this->string(),
             'books_id' => $this->integer()->notNull(),
-            'status' => $this->integer()->notNull(),
+            'status' => $this->smallInt()->notNull(),
         ]);
 
         // creates index for column `books_id`
