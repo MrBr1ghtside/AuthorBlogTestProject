@@ -26,6 +26,9 @@ class Feedbacks extends \yii\db\ActiveRecord
         return 'feedbacks';
     }
 
+    const STATUS_READER = 0; //Константа статуса для читателя
+    const STATUS_WRITER = 10;  //Константа статуса для писателя
+
     /**
      * {@inheritdoc}
      */
@@ -37,6 +40,8 @@ class Feedbacks extends \yii\db\ActiveRecord
             [['title'], 'string', 'max' => 50],
             [['text'], 'string', 'max' => 500],
             [['name'], 'string', 'max' => 255],
+            ['status', 'default', 'value' => self::STATUS_READER],
+            ['status', 'in', 'range' => [self::STATUS_WRITER, self::STATUS_READER]],
             [['books_id'], 'exist', 'skipOnError' => true, 'targetClass' => Books::className(), 'targetAttribute' => ['books_id' => 'id']],
         ];
     }
