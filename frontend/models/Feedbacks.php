@@ -16,7 +16,15 @@ class Feedbacks extends ActiveRecord
     public static function tableName()
     {
     return 'feedbacks';
-    }   
+    }  
+    
+    public function rules()
+    {
+        return [
+            ['status', 'default', 'value' => self::STATUS_READER],
+            ['status', 'in', 'range' => [self::STATUS_WRITER, self::STATUS_READER]],
+        ];
+    }
 
     public static function getAll()
     {
