@@ -12,6 +12,7 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log', 'gii'],
     'defaultRoute' => 'site/index',
+    'language' => 'ru-RU',
     'modules' => [
         'gii'=>[
             'class'=>'yii\gii\Module'
