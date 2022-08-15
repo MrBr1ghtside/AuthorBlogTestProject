@@ -12,6 +12,7 @@ use Yii;
  * @property string|null $text
  * @property int $books_id
  * @property int $status
+ * @property string $name
  *
  * @property Books $books
  */
@@ -31,10 +32,11 @@ class Feedbacks extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'books_id', 'status'], 'required'],
+            [['title', 'books_id', 'status', 'name'], 'required'],
             [['books_id', 'status'], 'integer'],
             [['title'], 'string', 'max' => 50],
             [['text'], 'string', 'max' => 500],
+            [['name'], 'string', 'max' => 255],
             [['books_id'], 'exist', 'skipOnError' => true, 'targetClass' => Books::className(), 'targetAttribute' => ['books_id' => 'id']],
         ];
     }
@@ -50,6 +52,7 @@ class Feedbacks extends \yii\db\ActiveRecord
             'text' => 'Text',
             'books_id' => 'Books ID',
             'status' => 'Status',
+            'name' => 'Name',
         ];
     }
 

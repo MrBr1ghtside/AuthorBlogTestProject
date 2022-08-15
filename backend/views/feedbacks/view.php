@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'text',
             'books_id',
             'status',
+            'name',
         ],
     ]) ?>
 

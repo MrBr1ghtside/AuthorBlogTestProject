@@ -18,7 +18,7 @@ class FeedbacksSearch extends Feedbacks
     {
         return [
             [['id', 'books_id', 'status'], 'integer'],
-            [['title', 'text'], 'safe'],
+            [['title', 'text', 'name'], 'safe'],
         ];
     }
 
@@ -64,7 +64,8 @@ class FeedbacksSearch extends Feedbacks
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'text', $this->text]);
+            ->andFilterWhere(['like', 'text', $this->text])
+            ->andFilterWhere(['like', 'name', $this->name]);
 
         return $dataProvider;
     }
