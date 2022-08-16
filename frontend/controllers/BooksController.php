@@ -14,7 +14,6 @@ class BooksController extends Controller
     {
         $array = Books::getAll();
         return $this->render('index',['varInView' => $array]);
-        return $this->render('index');
     }
 
     public function actionView($id)
