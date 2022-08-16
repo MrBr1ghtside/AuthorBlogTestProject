@@ -32,7 +32,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'text',
             'books_id',
-            'status',
+            [
+                'attribute' =>'status',
+                'value' => function($model) {
+                    return $model->getStatuses()[$model->status];
+                }
+            ],
             'name',
             [
                 'class' => ActionColumn::className(),
