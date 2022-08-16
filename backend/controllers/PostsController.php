@@ -2,8 +2,8 @@
 
 namespace backend\controllers;
 
-use app\models\Posts;
-use backend\models\PostsSearch;
+use common\models\Posts;
+use common\models\search\PostsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

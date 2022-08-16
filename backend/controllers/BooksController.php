@@ -2,8 +2,8 @@
 
 namespace backend\controllers;
 
-use app\models\Books;
-use backend\models\BooksSearch;
+use common\models\Books;
+use common\models\search\BooksSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

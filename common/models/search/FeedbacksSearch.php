@@ -1,10 +1,10 @@
 <?php
 
-namespace backend\models;
+namespace common\models\search;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Feedbacks;
+use common\models\Feedbacks;
 
 /**
  * FeedbacksSearch represents the model behind the search form of `app\models\Feedbacks`.

@@ -2,8 +2,8 @@
 
 namespace backend\controllers;
 
-use app\models\Feedbacks;
-use backend\models\FeedbacksSearch;
+use common\models\Feedbacks;
+use common\models\search\FeedbacksSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
