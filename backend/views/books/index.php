@@ -9,7 +9,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\BooksSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Books';
+$this->title = 'Книги';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="books-index">
@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Books', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить книгу', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>

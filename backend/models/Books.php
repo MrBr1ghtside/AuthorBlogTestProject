@@ -44,9 +44,9 @@ class Books extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'book_name' => 'Book Name',
-            'price' => 'Price',
-            'description' => 'Description',
+            'book_name' => 'Название книги',
+            'price' => 'Цена',
+            'description' => 'Описание',
         ];
     }
 

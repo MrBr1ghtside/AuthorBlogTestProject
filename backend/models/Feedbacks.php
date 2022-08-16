@@ -48,8 +48,8 @@ class Feedbacks extends \yii\db\ActiveRecord
 
     public function getStatuses() {
         return [
-            self::STATUS_READER=>'Reader',
-            self::STATUS_WRITER=>'Writer'
+            self::STATUS_READER=>'Читатель',
+            self::STATUS_WRITER=>'Писатель'
         ];
       }
        
@@ -64,11 +64,11 @@ class Feedbacks extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'text' => 'Text',
-            'books_id' => 'Books ID',
-            'status' => 'Status',
-            'name' => 'Name',
+            'title' => 'Заголовок',
+            'text' => 'Текст',
+            'books_id' => 'ID Книги',
+            'status' => 'Статус пользователя',
+            'name' => 'Имя',
         ];
     }
 

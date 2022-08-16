@@ -9,7 +9,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\AuthorsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Authors';
+$this->title = 'Авторы';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="authors-index">
@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Authors', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Добавить новую запись', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>

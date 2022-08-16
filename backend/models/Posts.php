@@ -57,9 +57,9 @@ class Posts extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'created_at' => 'Created At',
-            'text' => 'Text',
+            'title' => 'Заголовок',
+            'created_at' => 'Дата создания',
+            'text' => 'Текст',
         ];
     }
 }
