@@ -18,7 +18,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'books_id')->textInput() ?>
 
-    <?= $form->field($model, 'status')->dropDownList($model->getStatus(), 
+    <?= $form->field($model, 'status')->dropDownList($model->getStatuses(), 
              ['prompt'=>'Укажите статус пользователя']) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>

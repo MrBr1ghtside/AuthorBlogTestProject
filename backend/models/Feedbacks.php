@@ -46,16 +46,15 @@ class Feedbacks extends \yii\db\ActiveRecord
         ];
     }
 
-    public function getStatus() {
-        return array (self::STATUS_READER=>'Reader',self::STATUS_WRITER=>'Writer');
+    public function getStatuses() {
+        return [
+            self::STATUS_READER=>'Reader',
+            self::STATUS_WRITER=>'Writer'
+        ];
       }
        
-      public function getStatusLabel($status) {
-        if ($status==self::STATUS_WRITER) {
-          return 'Writer';
-        } else {
-          return 'Reader';        
-        }
+      public function getStatusesLabel($status) {
+        return $this->getStatuses()[$this->status]; 
       }
 
     /**
