@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\BooksSearch */
+/* @var $model common\models\search\BooksSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -22,6 +22,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'price') ?>
 
     <?= $form->field($model, 'description') ?>
+
+    <?= $form->field($model, 'slug') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Найти', ['class' => 'btn btn-primary']) ?>

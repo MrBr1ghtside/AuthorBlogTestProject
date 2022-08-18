@@ -3,6 +3,8 @@
 namespace common\models;
 
 use Yii;
+use yii\behaviors\SluggableBehavior;
+
 
 /**
  * This is the model class for table "books".
@@ -11,6 +13,7 @@ use Yii;
  * @property string $book_name
  * @property float|null $price
  * @property string|null $description
+ * @property string $slug
  *
  * @property Feedbacks[] $feedbacks
  */
@@ -30,10 +33,21 @@ class Books extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['book_name'], 'required'],
+            [['book_name', 'slug'], 'required'],
             [['price'], 'number'],
             [['description'], 'string'],
             [['book_name'], 'string', 'max' => 50],
+            [['slug'], 'string', 'max' => 255],
+        ];
+    }
+
+    public function behaviors(){
+        return [
+            [
+                'class' => SluggableBehavior::className(),
+                'attribute' => 'book_name',
+                'slugAttribute' => 'slug',
+            ],
         ];
     }
 
@@ -47,9 +61,15 @@ class Books extends \yii\db\ActiveRecord
             'book_name' => 'Название книги',
             'price' => 'Цена',
             'description' => 'Описание',
+            'slug' => 'slug url',
         ];
     }
 
+    public static function getAll()
+    {
+        $data = self::find()->all();
+        return $data;
+    }
     /**
      * Gets query for [[Feedbacks]].
      *

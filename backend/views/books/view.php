@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Books */
+/* @var $model common\models\Books */
 
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Книги', 'url' => ['index']];
@@ -33,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'book_name',
             'price',
             'description:ntext',
+            'slug',
         ],
     ]) ?>
 

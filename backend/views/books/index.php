@@ -6,7 +6,7 @@ use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\BooksSearch */
+/* @var $searchModel common\models\search\BooksSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Книги';
@@ -32,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'book_name',
             'price',
             'description:ntext',
+            'slug',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, $model, $key, $index, $column) {

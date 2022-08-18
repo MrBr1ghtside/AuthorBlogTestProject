@@ -12,7 +12,7 @@ $this->title = 'Books';
 			<div class="books">
                 <?php foreach ($varInView as $item): ?>
 				    <div class="single-book">
-                        <?= Html::a($item['book_name'], ['books/view', 'id' => $item['id']]) ?>
+                        <?= Html::a($item['book_name'], ['books/view', 'slug' => $item['slug']]) ?>
 					    <a href="" class="single-book__img">
                             <?php echo"<img src ='./images/books-{$item['id']}.jpg' alt='single book and cd'>" ?>
 						    <div class="single-book_download">

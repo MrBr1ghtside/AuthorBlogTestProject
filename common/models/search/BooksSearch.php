@@ -7,7 +7,7 @@ use yii\data\ActiveDataProvider;
 use common\models\Books;
 
 /**
- * BooksSearch represents the model behind the search form of `app\models\Books`.
+ * BooksSearch represents the model behind the search form of `common\models\Books`.
  */
 class BooksSearch extends Books
 {
@@ -18,7 +18,7 @@ class BooksSearch extends Books
     {
         return [
             [['id'], 'integer'],
-            [['book_name', 'description'], 'safe'],
+            [['book_name', 'description', 'slug'], 'safe'],
             [['price'], 'number'],
         ];
     }
@@ -64,7 +64,8 @@ class BooksSearch extends Books
         ]);
 
         $query->andFilterWhere(['like', 'book_name', $this->book_name])
-            ->andFilterWhere(['like', 'description', $this->description]);
+            ->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'slug', $this->slug]);
 
         return $dataProvider;
     }
