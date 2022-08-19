@@ -1,5 +1,8 @@
 <?php
+
+use yii\helpers\Html;
 use yii\grid\GridView;
+
 
 ?>
 
@@ -16,8 +19,9 @@ use yii\grid\GridView;
 							<?php echo $item->text ?>
 						</p>
 						<img src="./images/quotes.svg" alt="quotes svg">
-						<h4>David Dixon</h4>
-						<p>Reader</p>
+						<h4>
+							<?php echo $item->name ?>
+						</h4>
 					</div>
 				<?php endforeach ?>
 			</div>
