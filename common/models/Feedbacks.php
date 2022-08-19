@@ -81,4 +81,15 @@ class Feedbacks extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Books::className(), ['id' => 'books_id']);
     }
+
+    public function getBooksName() 
+    {
+        return $this->books->book_name;
+    }
+
+    public static function getAll()
+    {
+        $data = self::find()->all();
+        return $data;
+    }
 }

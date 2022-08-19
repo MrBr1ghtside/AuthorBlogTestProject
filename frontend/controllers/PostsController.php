@@ -5,7 +5,7 @@ namespace frontend\controllers;
 use Yii;
 use yii\web\Controller;
 
-use frontend\models\Posts;
+use common\models\Posts;
 
 class PostsController extends Controller
 {

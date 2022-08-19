@@ -44,4 +44,10 @@ class Authors extends \yii\db\ActiveRecord
             'text' => 'Текст',
         ];
     }
+
+    public static function getAll()
+    {
+        $data = self::find()->all();
+        return $data;
+    }
 }

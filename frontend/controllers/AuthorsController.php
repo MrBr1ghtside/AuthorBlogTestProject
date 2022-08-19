@@ -5,7 +5,7 @@ namespace frontend\controllers;
 use Yii;
 use yii\web\Controller;
 
-use frontend\models\Authors;
+use common\models\Authors;
 
 class AuthorsController extends Controller
 {
