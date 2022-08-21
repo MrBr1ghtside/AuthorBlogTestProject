@@ -1,6 +1,12 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
-    "description": "Yii 2 Advanced Project Template",
+    "name": "author-blog/advanced",
+    "description": "author-blog-test-project",
+    "authors": [
+        {
+          "name": "My name",
+          "email": "admin@example.com"
+        }
+    ],
     "keywords": ["yii2", "framework", "advanced", "project template"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
@@ -11,6 +17,9 @@
         "wiki": "http://www.yiiframework.com/wiki/",
         "irc": "irc://irc.freenode.net/yii",
         "source": "https://github.com/yiisoft/yii2"
+    },
+    "autoload": {
+        "psr-4": {"AuthorBlog\\": "src/"}
     },
     "minimum-stability": "stable",
     "require": {
