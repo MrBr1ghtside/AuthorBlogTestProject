@@ -83,17 +83,6 @@ AppAsset::register($this);
 						</div>
 					</div>
 				</div>
-				<div class="footer-contact-form">
-					<h5>Contact Form</h5>
-					<form class="contact-form">
-						<div class="contact-form__input">
-							<input type="text" name="name" placeholder="Name">
-							<input type="email" name="email" placeholder="Email">
-						</div>
-						<textarea></textarea>
-						<input type="submit" name="submit" value="Submit" class="submit-button">
-					</form>
-				</div>
 			</div>
 		</div>
 	</footer>
