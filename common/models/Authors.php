@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use Yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "authors".
@@ -11,7 +12,7 @@ use Yii;
  * @property string $name
  * @property string|null $text
  */
-class Authors extends \yii\db\ActiveRecord
+class Authors extends ActiveRecord
 {
     /**
      * {@inheritdoc}

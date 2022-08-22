@@ -3,7 +3,7 @@
 namespace common\models;
 
 use Yii;
-
+use Yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
 
 /**
@@ -14,7 +14,7 @@ use yii\behaviors\TimestampBehavior;
  * @property int|null $created_at
  * @property string|null $text
  */
-class Posts extends \yii\db\ActiveRecord
+class Posts extends ActiveRecord
 {
     /**
      * {@inheritdoc}

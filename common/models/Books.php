@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use Yii\db\ActiveRecord;
 use yii\behaviors\SluggableBehavior;
 
 
@@ -17,7 +18,7 @@ use yii\behaviors\SluggableBehavior;
  *
  * @property Feedbacks[] $feedbacks
  */
-class Books extends \yii\db\ActiveRecord
+class Books extends ActiveRecord
 {
     /**
      * {@inheritdoc}
