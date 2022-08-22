@@ -6,9 +6,9 @@ use yii\bootstrap4\Html;
 ?>
 
 <section class="fh5co-books">
-<div class="container">
-    <div class="row">
-        <div class="cell col-lg-8 col-md-3 col-sm-6 col-xs-12">
+<div class="site-container">
+    <div class="row align-items-center">
+        <div class="col col-md-8 offset-md-2">
             <h1>
                 <?= $model->title ?>
             </h1>
