@@ -19,8 +19,8 @@
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap4": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-		"kartik-v/yii2-widgets": "dev-master",
-		"dvizh/yii2-seo": "@dev",
+	"kartik-v/yii2-widgets": "dev-master",
+	"dvizh/yii2-seo": "@dev",
         "dektrium/yii2-user": "^0.9.14",
         "dmstr/yii2-adminlte-asset": "^2.1"
     },
