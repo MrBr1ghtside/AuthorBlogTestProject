@@ -2,11 +2,11 @@
 
 namespace backend\controllers;
 
-use common\models\Posts;
-use common\models\search\PostsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\Posts;
+use common\models\search\PostsSearch;
 
 /**
  * PostsController implements the CRUD actions for Posts model.

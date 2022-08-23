@@ -2,11 +2,11 @@
 
 namespace backend\controllers;
 
-use common\models\Books;
-use common\models\search\BooksSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\Books;
+use common\models\search\BooksSearch;
 
 /**
  * BooksController implements the CRUD actions for Books model.

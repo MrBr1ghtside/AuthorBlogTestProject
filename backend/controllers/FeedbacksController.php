@@ -2,11 +2,11 @@
 
 namespace backend\controllers;
 
-use common\models\Feedbacks;
-use common\models\search\FeedbacksSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\Feedbacks;
+use common\models\search\FeedbacksSearch;
 
 /**
  * FeedbacksController implements the CRUD actions for Feedbacks model.
