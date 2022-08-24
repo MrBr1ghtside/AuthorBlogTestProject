@@ -75,16 +75,7 @@ $this->title = 'Author Blog';
 						</div>
 					</a>
 					<h4 class="single-book__title">Olivani</h4>
-					<span class="single-book__price">$15.00</span>
-					<!-- star rating -->
-					<div class="rating">
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-					</div>
-					<!-- star rating end -->
+					<span class="single-book__price">$15.99</span>
 				</div>
 				<div class="single-book">
 					<a href="#" class="single-book__img">
@@ -94,16 +85,7 @@ $this->title = 'Author Blog';
 						</div>
 					</a>
 					<h4 class="single-book__title">Molleon’s Life</h4>
-					<span class="single-book__price">$22.00</span>
-					<!-- star rating -->
-					<div class="rating">
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-					</div>
-					<!-- star rating end -->
+					<span class="single-book__price">$22.99</span>
 				</div>
 				<div class="single-book">
 					<a href="#" class="single-book__img">
@@ -113,7 +95,7 @@ $this->title = 'Author Blog';
 						</div>
 					</a>
 					<h4 class="single-book__title">Love is Love</h4>
-					<span class="single-book__price">$25.00</span>
+					<span class="single-book__price">$25.99</span>
 				</div>
 				<div class="single-book">
 					<a href="#" class="single-book__img">
@@ -123,16 +105,15 @@ $this->title = 'Author Blog';
 						</div>
 					</a>
 					<h4 class="single-book__title">Give Me Also</h4>
-					<span class="single-book__price">$30.00</span>
+					<span class="single-book__price">$30.99</span>
 				</div>
 			</div>
 			<div class="books-brand-button">
 				<p class="brand-button"><?= Html::a('View more', ['books/books']) ?> </p>
-				<a href="#" class="brand-button">View more</a>
 			</div>
 		</div>
 	</section>
-	<!-- Books and CD end -->
+	<!-- Books end -->
 
 	<!-- Counter -->
 	<div class="fh5co-counter counters">
