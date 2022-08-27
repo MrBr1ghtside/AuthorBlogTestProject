@@ -45,13 +45,19 @@ $this->title = 'Author Blog';
 				<div class="about-me-slider">
 					<div class="about-me-single-slide">
 						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
-						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a community for authors to learn and connect.</p>
+						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, 
+						and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services,
+						have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, 
+						The Spirit of Poe, and have created a community for authors to learn and connect.</p>
 						<h4>Author</h4>
 						<p class="p-white">See me</p>
 					</div>
 					<div class="about-me-single-slide">
 						<h2 class="universal-h2 universal-h2-bckg">About me 2</h2>
-						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a community for authors to learn and connect.</p>
+						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society 
+						journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community 
+						for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a 
+						community for authors to learn and connect.</p>
 						<h4>Author</h4>
 						<p class="p-white">See me</p>
 					</div>
@@ -162,7 +168,8 @@ $this->title = 'Author Blog';
 					<div class="single-blog__text">
 						<h4>The Journey Under the Waves</h4>
 						<span>On August 28, 2015</span>
-						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, 
+						lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
 					</div>
 				</div>
 				<div class="single-blog">
@@ -172,7 +179,8 @@ $this->title = 'Author Blog';
 					<div class="single-blog__text">
 						<h4>The Journey Under the Waves</h4>
 						<span>On August 28, 2015</span>
-						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, 
+						lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
 					</div>
 				</div>
 				<div class="single-blog">
@@ -182,7 +190,8 @@ $this->title = 'Author Blog';
 					<div class="single-blog__text">
 						<h4>The Journey Under the Waves</h4>
 						<span>On August 28, 2015</span>
-						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, 
+						lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
 					</div>
 				</div>
 			</div>
