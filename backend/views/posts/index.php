@@ -31,6 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'title',
             'text',
+            'slug',
             [
                 'attribute' =>'created_at',
                 'value' => function($model) {

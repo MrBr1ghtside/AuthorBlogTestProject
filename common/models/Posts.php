@@ -5,6 +5,7 @@ namespace common\models;
 use Yii;
 use Yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
+use yii\behaviors\SluggableBehavior;
 
 /**
  * This is the model class for table "posts".
@@ -29,6 +30,11 @@ class Posts extends ActiveRecord
                 'updatedAtAttribute' => false,
                 'value' => time(),
             ],
+            [
+                    'class' => SluggableBehavior::className(),
+                    'attribute' => 'title',
+                    'slugAttribute' => 'slug',
+            ],
         ];
     }
 
@@ -46,7 +52,7 @@ class Posts extends ActiveRecord
             [['title'], 'required'],
             [['created_at'], 'integer'],
             [['title'], 'string', 'max' => 50],
-            [['text'], 'string', 'max' => 255],
+            [['text', 'slug'], 'string', 'max' => 255],
         ];
     }
 
@@ -60,6 +66,7 @@ class Posts extends ActiveRecord
             'title' => 'Заголовок',
             'created_at' => 'Дата создания',
             'text' => 'Текст',
+            'slug' => 'slug url',
         ];
     }
 

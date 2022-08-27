@@ -16,9 +16,9 @@ class PostsController extends Controller
         return $this->render('index',['varInView' => $array]);
     }
 
-    public function actionView($id)
+    public function actionView($slug)
     {
-        $posts = Posts::find()->where(['id' => $id])->one();
+        $posts = Posts::find()->where(['slug' => $slug])->one();
 
       if ($posts) {
         return $this->render('view', ['model' => $posts]);
