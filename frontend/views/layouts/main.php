@@ -28,34 +28,21 @@ AppAsset::register($this);
 <body class="d-flex flex-column h-100">
 	<?php $this->beginBody() ?>
 <headler class="site-headler">
-	<!-- Navigation -->
-	<nav class="site-navigation">
-    <div class="site-navigation-inner site-container">
-			<img src="./images/site-logo.png" alt="site logo">
-			<div class="main-navigation">
-				<ul class="main-navigation__ul">
-					<li><?= Html::a('Homepage', ['/site/index']) ?></li>
-					<li><?= Html::a('Sign in', ['/user/registration/register']) ?></li>
-					<li><?= Html::a('Login', ['/user/security/login']) ?></li>
-					<li><?= Html::a('Contact', ['/site/contact']) ?></li>
-					<li><?= Html::a('Feedback', ['feedbacks/feedbacks']) ?></li>
-					<li><?= Html::a('Posts', ['posts/posts']) ?></li>
-				</ul>
-			</div>
-			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			<script>
-				function myFunction(x) {
-					x.classList.toggle("change");
-				}
-			</script>
 
-		</div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md fixed-top" style="background-color: #595959">
+		<a class="navbar-brand" href="#">
+    		<img src="./images/site-logo.png" width="85" height="45" alt="">
+  		</a>
+	  	<?= Html::a('Home', ['/site/index'], ['class' => 'nav-item nav-link text-white']) ?>
+	  	<?= Html::a('Sign in', ['/user/registration/register'], ['class' => 'nav-item nav-link text-white']) ?>
+	  	<?= Html::a('Login', ['/user/security/login'], ['class' => 'nav-item nav-link text-white']) ?>
+	  	<?= Html::a('Contact', ['/site/contact'], ['class' => 'nav-item nav-link text-white']) ?>
+	  	<?= Html::a('Feedback', ['feedbacks/feedbacks'], ['class' => 'nav-item nav-link text-white']) ?>
+	  	<?= Html::a('Posts', ['posts/posts'], ['class' => 'nav-item nav-link text-white']) ?>
 	</nav>
 	<!-- Navigation end -->
+
 	<main role="main" class="flex-shrink-0">
     	<div>
 			<?= Breadcrumbs::widget([
