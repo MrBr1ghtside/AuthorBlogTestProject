@@ -14,7 +14,6 @@ class AuthorsController extends Controller
     {
         $array = Authors::getAll();
         return $this->render('index',['varInView' => $array]);
-        return $this->render('index');
     }
 
 }
