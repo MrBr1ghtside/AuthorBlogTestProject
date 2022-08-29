@@ -74,42 +74,30 @@ $this->title = 'Author Blog';
 			<h2 class="universal-h2 universal-h2-bckg">New Books</h2>
 			<div class="books">
 				<div class="single-book">
-					<a href="#" class="single-book__img">
+					<p class="single-book__img">
 						<img src="./images/books-1.jpg" alt="single book and cd">
-						<div class="single-book_download">
-							<img src="./images/download.svg" alt="book image">
-						</div>
-					</a>
+					</p>
 					<h4 class="single-book__title">Olivani</h4>
 					<span class="single-book__price">$15.99</span>
 				</div>
 				<div class="single-book">
-					<a href="#" class="single-book__img">
+					<p class="single-book__img">
 						<img src="./images/books-2.jpg" alt="single book and cd">
-						<div class="single-book_download">
-							<img src="./images/download.svg" alt="book image">
-						</div>
-					</a>
+					</p>
 					<h4 class="single-book__title">Molleon’s Life</h4>
 					<span class="single-book__price">$22.99</span>
 				</div>
 				<div class="single-book">
-					<a href="#" class="single-book__img">
+					<p class="single-book__img">
 						<img src="./images/books-3.jpg" alt="single book and cd">
-						<div class="single-book_download">
-							<img src="./images/download.svg" alt="book image">
-						</div>
-					</a>
+					</p>
 					<h4 class="single-book__title">Love is Love</h4>
 					<span class="single-book__price">$25.99</span>
 				</div>
 				<div class="single-book">
-					<a href="#" class="single-book__img">
+					<p class="single-book__img">
 						<img src="./images/books-4.jpg" alt="single book and cd">
-						<div class="single-book_download">
-							<img src="./images/download.svg" alt="book image">
-						</div>
-					</a>
+					</p>
 					<h4 class="single-book__title">Give Me Also</h4>
 					<span class="single-book__price">$30.99</span>
 				</div>
