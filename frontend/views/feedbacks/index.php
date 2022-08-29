@@ -3,9 +3,9 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
+$this->title = 'Feedbacks';
 
 ?>
-
 
 <section class="fh5co-quotes">
 		<div class="site-container">
