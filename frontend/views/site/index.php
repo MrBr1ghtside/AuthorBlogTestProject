@@ -84,7 +84,7 @@ $this->title = 'Author Blog';
 					<p class="single-book__img">
 						<img src="./images/books-2.jpg" alt="single book and cd">
 					</p>
-					<h4 class="single-book__title">Molleon’s Life</h4>
+					<h4 class="single-book__title">Molleon's Life</h4>
 					<span class="single-book__price">$22.99</span>
 				</div>
 				<div class="single-book">
