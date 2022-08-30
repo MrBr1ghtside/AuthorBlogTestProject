@@ -22,6 +22,15 @@ class Authors extends ActiveRecord
         return 'authors';
     }
 
+    function behaviors()
+    {
+        return [
+            'seo' => [
+                'class' => 'dvizh\seo\behaviors\SeoFields',
+            ],
+        ];
+    }
+    
     /**
      * {@inheritdoc}
      */
