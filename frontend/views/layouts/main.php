@@ -28,21 +28,35 @@ AppAsset::register($this);
 <body class="d-flex flex-column h-100">
 	<?php $this->beginBody() ?>
 <headler class="site-headler">
-
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md fixed-top" style="background-color: #595959">
-		<a class="navbar-brand" href="#">
-    		<img src="./images/site-logo.png" width="85" height="45" alt="">
-  		</a>
-	  	<?= Html::a('Home', ['/site/index'], ['class' => 'nav-item nav-link text-white']) ?>
-	  	<?= Html::a('Sign in', ['/user/registration/register'], ['class' => 'nav-item nav-link text-white']) ?>
-	  	<?= Html::a('Login', ['/user/security/login'], ['class' => 'nav-item nav-link text-white']) ?>
-	  	<?= Html::a('Contact', ['/site/contact'], ['class' => 'nav-item nav-link text-white']) ?>
-	  	<?= Html::a('Feedback', ['feedbacks/feedbacks'], ['class' => 'nav-item nav-link text-white']) ?>
-	  	<?= Html::a('Posts', ['posts/posts'], ['class' => 'nav-item nav-link text-white']) ?>
-	</nav>
+	<?php
+    NavBar::begin([
+        'brandLabel' => Html::img('./images/site-logo.png'),
+        'options' => [
+            'class' => 'navbar navbar-expand-md navbar-dark',
+			'style' => 'background-color: #595959',
+        ],
+    ]);
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav'],
+        'items' => [
+			['label' => 'Home', 'url' => ['/site/index']],
+			['label' => 'Sign in', 'url' => ['/user/registration/register']],
+			Yii::$app->user->isGuest ? // Если пользователь гость, показыаем ссылку "Вход", если он авторизовался "Выход"
+				['label' => 'Login', 'url' => ['/user/security/login']] :
+				[
+					'label' => 'Log out (' . Yii::$app->user->identity->username . ')',
+					'url' => ['/site/logout'],
+					'linkOptions' => ['data-method' => 'post']
+			],
+			['label' => 'Contact', 'url' => ['/site/contact']],
+			['label' => 'Feedbacks', 'url' => ['feedbacks/feedbacks']],
+			['label' => 'Posts', 'url' => ['posts/posts']],
+		],
+    ]);
+    NavBar::end();
+    ?>
 	<!-- Navigation end -->
-
 	<main role="main" class="flex-shrink-0">
     	<div>
 			<?= Breadcrumbs::widget([
