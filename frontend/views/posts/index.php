@@ -11,8 +11,10 @@ $this->title = 'Posts';
 			        <div class="row">
                         <div class="col-md-8 offset-md-2 col-md-push-3">
                             <?php foreach ($varInView as $item): ?>
-                                <h3> <?= Html::a($item['title'], ['posts/view', 'slug' => $item['slug']]) ?> </h3>
-                                <p> <?= date('d.m.Y', $item->created_at) ?> </p>
+                                <h3><?= Html::a($item['title'], ['posts/view', 'slug' => $item['slug']]) ?></h3>
+                                <p>
+                                    <?= date('d.m.Y', $item->created_at) ?>
+                                </p>
                             <?php endforeach ?>
                         </div>
                     </div>

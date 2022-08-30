@@ -10,15 +10,11 @@ use yii\bootstrap4\Html;
         <h2 class="universal-h2">&nbsp</h2>
             <div class="row align-items-center">
                 <div class="col col-md-8 offset-md-2">
-                    <h1>
-                        <?= $model->title ?>
-                    </h1>
+                    <h1><?= $model->title ?></h1>
                     <p>
                         <?= date('d.m.Y', $model->created_at) ?>
                     </p>
-                    <span>
-                        <?= $model->text ?>
-                    </span>
+                    <span><?= $model->text ?></span>
                 </div>
             </div>
         </div>
