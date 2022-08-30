@@ -20,7 +20,7 @@ $this->title = 'Author Blog';
 					<span class="brand-span">Author, Writer, Traveler</span>
 				</div>
 				<p>One Man. One Mission. Can He Go Beyond? One Man. One Mission. Can He Go Beyond?</p>
-				<p class="brand-button"><?= Html::a('Read bio >', ['authors/authors']) ?> </p>
+				<?= Html::a('Read bio >', ['authors/authors'], ['class' => 'brand-button']) ?>
 			</div>
 		</div>
 	</section>
@@ -103,7 +103,7 @@ $this->title = 'Author Blog';
 				</div>
 			</div>
 			<div class="books-brand-button">
-				<p class="brand-button"><?= Html::a('View more', ['books/books']) ?> </p>
+				<?= Html::a('View more', ['books/books'], ['class' => 'brand-button']) ?>
 			</div>
 		</div>
 	</section>
