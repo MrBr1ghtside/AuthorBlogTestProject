@@ -8,10 +8,11 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
+    'name' => 'Author blog',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log', 'gii'],
-    'defaultRoute' => 'site/index',
+    'defaultRoute' => 'admin',
     'language' => 'ru-RU',
     'modules' => [
         'gii'=>[
