@@ -663,7 +663,7 @@
     font-size: 25px;
     color: #c18f59; }
   .fh5co-quotes .slick-arrow {
-    bottom: -8%; }
+    bottom: -20%; }
   .fh5co-quotes .slick-prev {
     left: 45.5%; }
     @media (max-width: 1150px) {
@@ -735,7 +735,7 @@
     margin: 35px 0; } }
 
 .site-footer {
-  padding-top: 120px;
+  padding-top: 140px;
   background-color: #343434; }
   @media (max-width: 1250px) {
     .site-footer {
