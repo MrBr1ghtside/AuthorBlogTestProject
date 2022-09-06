@@ -6,23 +6,23 @@
  */
 /* Fonts */
 @font-face {
-  font-family: 'Calisto-MT';
-  src: url(../fonts/Calisto-MT.ttf); }
+  font-family: 'Quicksand-Regular';
+  src: url(../fonts/Quicksand-Regular.ttf); }
 
 @font-face {
-  font-family: 'Calisto-MT-Italic';
-  src: url(../fonts/Calisto-MT-Italic.ttf); }
+  font-family: 'Quicksand-Light';
+  src: url(../fonts/Quicksand-Light.ttf); }
 
 @font-face {
-  font-family: 'Calisto-MT-Bold';
-  src: url(../fonts/Calisto-MT-Bold.ttf); }
+  font-family: 'Quicksand-Bold';
+  src: url(../fonts/Quicksand-Bold.ttf); }
 
 /* Colors */
 /* Universal style */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Calisto-MT"; }
+  font-family: "Quicksand-Regular-MT"; }
 
 .site-container {
   width: 1115px;
@@ -183,7 +183,7 @@
     font-size: 74px;
     letter-spacing: 3px;
     color: #fff;
-    font-family: "Calisto-MT-Bold"; }
+    font-family: "Quicksand-Bold"; }
     @media (max-width: 1250px) {
       .top-banner__inner .top-banner__h2 {
         font-size: 50px; } }
@@ -331,7 +331,7 @@
       font-size: 90px;
       line-height: 75px;
       color: #c18f59;
-      font-family: "Calisto-MT-Bold"; }
+      font-family: "Quicksand-Bold"; }
       @media (max-width: 992px) {
         .portfolio-wrapper .portfolio__name span {
           font-size: 65px;
@@ -567,7 +567,7 @@
       margin-bottom: 15px;
       font-size: 14px;
       color: #c18f59;
-      font-family: "Calisto-MT-Bold"; }
+      font-family: "Quicksand-Bold"; }
     .single-blog .single-blog__text p {
       color: #777;
       line-height: 21px; }
