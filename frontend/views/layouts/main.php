@@ -50,8 +50,8 @@ AppAsset::register($this);
 					'linkOptions' => ['data-method' => 'post']
 			],
 			['label' => 'Contact', 'url' => ['/site/contact']],
-			['label' => 'Feedbacks', 'url' => ['feedbacks/feedbacks']],
-			['label' => 'Posts', 'url' => ['posts/posts']],
+			['label' => 'Feedbacks', 'url' => ['/feedbacks/feedbacks']],
+			['label' => 'Posts', 'url' => ['/posts/posts']],
 		],
     ]);
     NavBar::end();
