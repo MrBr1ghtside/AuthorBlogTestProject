@@ -7,6 +7,7 @@
 use yii\bootstrap4\Html;
 use yii\bootstrap4\ActiveForm;
 use yii\captcha\Captcha;
+use yii\grid\GridView;
 
 $this->title = 'Форма обратной связи';
 ?>
@@ -35,9 +36,13 @@ $this->title = 'Форма обратной связи';
                     <div class="form-group">
                         <?= Html::submitButton('Подтвердить', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                     </div>
-
                 <?php ActiveForm::end(); ?>
+            </div>
+                <div class='col-md-8 offset-md-2'>
+                  <iframe
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                    frameborder="0" style='border:5; height: 400px; width: 745px;'>
+                </iframe>
             </div>
         </div>
 </div>
-
