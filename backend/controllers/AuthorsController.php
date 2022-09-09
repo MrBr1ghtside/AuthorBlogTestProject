@@ -11,7 +11,7 @@ use common\models\search\AuthorsSearch;
 /**
  * AuthorsController implements the CRUD actions for Authors model.
  */
-class AuthorsController extends Controller
+class AuthorsController extends SiteController
 {
     /**
      * @inheritDoc

@@ -11,7 +11,7 @@ use common\models\search\BooksSearch;
 /**
  * BooksController implements the CRUD actions for Books model.
  */
-class BooksController extends Controller
+class BooksController extends SiteController
 {
     /**
      * @inheritDoc

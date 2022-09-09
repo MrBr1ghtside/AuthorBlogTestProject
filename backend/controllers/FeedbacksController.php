@@ -11,7 +11,7 @@ use common\models\search\FeedbacksSearch;
 /**
  * FeedbacksController implements the CRUD actions for Feedbacks model.
  */
-class FeedbacksController extends Controller
+class FeedbacksController extends SiteController
 {
     /**
      * @inheritDoc
