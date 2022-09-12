@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41bf7ce08b29d6a2477ba3e505ef414c",
+    "content-hash": "9b3324868f4c074668a7541d89694e67",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -260,6 +260,63 @@
                 "source": "https://github.com/cebe/yii2-gravatar"
             },
             "time": "2013-12-10T17:49:58+00:00"
+        },
+        {
+            "name": "dektrium/yii2-rbac",
+            "version": "1.0.0-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dektrium/yii2-rbac.git",
+                "reference": "0943e66c450132b306584a37caefc2aa04258372"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dektrium/yii2-rbac/zipball/0943e66c450132b306584a37caefc2aa04258372",
+                "reference": "0943e66c450132b306584a37caefc2aa04258372",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-widget-select2": "^2.0",
+                "yiisoft/yii2": "^2.0.8"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "dektrium\\rbac\\Bootstrap",
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "dektrium\\rbac\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitry Erofeev",
+                    "email": "dmeroff@gmail.com",
+                    "homepage": "http://dmeroff.ru"
+                }
+            ],
+            "description": "RBAC management module for Yii2",
+            "keywords": [
+                "dektrium",
+                "rbac gui",
+                "rbac management",
+                "rbac module",
+                "yii rbac",
+                "yii2",
+                "yii2-rbac"
+            ],
+            "support": {
+                "issues": "https://github.com/dektrium/yii2-rbac/issues?state=open",
+                "source": "https://github.com/dektrium/yii2-rbac"
+            },
+            "time": "2016-08-15T15:49:54+00:00"
         },
         {
             "name": "dektrium/yii2-user",
@@ -2097,6 +2154,57 @@
                 "wiki": "http://www.yiidoc.com/wiki/"
             },
             "time": "2020-02-10T00:48:09+00:00"
+        },
+        {
+            "name": "msvdev/yii2-widget-mappicker",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mihaylichenko/yii2-widget-mappicker.git",
+                "reference": "6416ca771079f1448a447d30593a72d25a8e5ff2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mihaylichenko/yii2-widget-mappicker/zipball/6416ca771079f1448a447d30593a72d25a8e5ff2",
+                "reference": "6416ca771079f1448a447d30593a72d25a8e5ff2",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": ">=2.0.4"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "msvdev\\widgets\\mappicker\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Mykhaylichenko",
+                    "email": "senya_m@bk.ru",
+                    "homepage": "https://github.com/mihaylichenko/"
+                }
+            ],
+            "description": "Yii2 map widget allows you to simplify the entry of geographic coordinates for your form. Support google and yandex maps services.",
+            "homepage": "https://github.com/mihaylichenko/yii2-widget-mappicker",
+            "keywords": [
+                "extension",
+                "googlemap",
+                "map",
+                "plugin",
+                "widget",
+                "yandexmap",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/mihaylichenko/yii2-widget-mappicker/issues",
+                "source": "https://github.com/mihaylichenko/yii2-widget-mappicker/tree/master"
+            },
+            "time": "2018-04-05T08:24:39+00:00"
         },
         {
             "name": "npm-asset/bootstrap",
@@ -7325,7 +7433,8 @@
     "stability-flags": {
         "kartik-v/yii2-widgets": 20,
         "dvizh/yii2-seo": 20,
-        "mirocow/yii2-yandex-maps": 20
+        "mirocow/yii2-yandex-maps": 20,
+        "dektrium/yii2-rbac": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
