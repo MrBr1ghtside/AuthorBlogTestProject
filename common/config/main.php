@@ -10,8 +10,16 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'yandexMapsApi' => [
+            'class' => 'mirocow\yandexmaps\Api',
+        ],
+        'authManager' => [
+            'class' => 'yii\rbac\PhpManager',
+            'itemFile' => '@common/components/rbac/items.php',
+            'assignmentFile' => '@common/components/rbac/assignments.php',
+            'ruleFile' => '@common/components/rbac/rules.php'
+        ],
     ],
-
     'modules' => [
         'user' => [
             'class' => 'dektrium\user\Module',
