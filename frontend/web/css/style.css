@@ -457,18 +457,6 @@
       .single-book:last-child {
         margin-right: 0; } }
 
-.rating {
-  margin-top: 8px;
-  unicode-bidi: bidi-override;
-  direction: rtl; }
-  .rating span {
-    font-size: 23px;
-    color: #ffd200;
-    cursor: pointer; }
-  .rating > span:hover:before, .rating > span:hover ~ span:before {
-    content: "\2605";
-    position: absolute; }
-
 .fh5co-counter {
   position: relative;
   margin-bottom: 122px;
