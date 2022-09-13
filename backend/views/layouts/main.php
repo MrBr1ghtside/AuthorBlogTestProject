@@ -30,11 +30,12 @@ AppAsset::register($this);
     NavBar::begin([
         'brandLabel' => 'Author blog',
         'options' => [
-            'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
+            'class' => 'navbar navbar-expand-md navbar-dark fixed-top',
+            'style' => 'background-color: #367fa9',
         ],
     ]);
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/user/security/login']];
+        $menuItems[] = ['label' => 'Вход', 'url' => ['/user/security/login']];
     } else {
         $menuItems[] = '<li>'
         . Html::beginForm(['/admin'], 'post', ['class' => 'form-inline'])
@@ -74,7 +75,6 @@ AppAsset::register($this);
 <footer class="footer mt-auto py-3 text-muted">
     <div class="container">
         <p class="float-left">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
-        <p class="float-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
 
