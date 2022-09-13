@@ -33,16 +33,13 @@ AppAsset::register($this);
             'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
         ],
     ]);
-    $menuItems = [
-        ['label' => 'Home', 'url' => ['/admin']],
-    ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/user/security/login']];
     } else {
         $menuItems[] = '<li>'
         . Html::beginForm(['/admin'], 'post', ['class' => 'form-inline'])
         . Html::submitButton(
-            'Admin page (' . Yii::$app->user->identity->username . ')',
+            'Главная',
             ['class' => 'btn btn-link logout']
         )
         . Html::endForm()
@@ -50,7 +47,7 @@ AppAsset::register($this);
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post', ['class' => 'form-inline'])
             . Html::submitButton(
-                'Logout (' . Yii::$app->user->identity->username . ')',
+                'Выйти (' . Yii::$app->user->identity->username . ')',
                 ['class' => 'btn btn-link logout']
             )
             . Html::endForm()
