@@ -515,7 +515,9 @@
   display: flex;
   justify-content: center; }
   .single-count__text img {
-    margin-right: 20px; }
+    margin-right: 20px;
+    height: 90%;
+  }
 
 .fh5co-blog {
   margin-bottom: 175px; }
