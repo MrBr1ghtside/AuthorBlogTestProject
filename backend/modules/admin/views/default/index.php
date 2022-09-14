@@ -9,11 +9,8 @@ use \msvdev\widgets\mappicker\MapYandexAset;
 ?>
 
 <div class="admin-default-index">
-    <h1><?= $this->context->action->uniqueId ?></h1>
-    <p>
-        This is the view content for action "<?= $this->context->action->id ?>".
-        The action belongs to the controller "<?= get_class($this->context) ?>"
-        in the "<?= $this->context->module->id ?>" module.
-    </p>
+<div id="map" style="width: 500px; height: 370px;"></div>
+<input id="coordinates">
 
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </div>
