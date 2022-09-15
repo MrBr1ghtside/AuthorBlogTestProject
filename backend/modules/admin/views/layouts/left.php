@@ -52,6 +52,7 @@ use yii\helpers\Url;
                                 'icon' => 'circle-o',
                                 'url' => '#',
                                 'items' => [
+                                    ['label' => 'Настройка информации', 'icon' => 'database', 'url' => ['/settings'],],
                                     ['label' => 'Авторы', 'icon' => 'database', 'url' => ['/authors'],],
                                     ['label' => 'Книги', 'icon' => 'database', 'url' => ['/books'],],
                                     ['label' => 'Отзывы', 'icon' => 'database', 'url' => ['/feedbacks'],],
