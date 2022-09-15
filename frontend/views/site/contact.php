@@ -38,13 +38,46 @@ $this->title = 'Форма обратной связи';
                     </div>
                 <?php ActiveForm::end(); ?>
             </div>
-                <?php foreach ($varInView as $item): ?>
-                    <div style="universal-h2-bckg">
-                    <a href="https://yandex.ru/maps/53/kurgan/house/ulitsa_koli_myagotina_153/YkwYdQNhS0AEQFtvfXh1dXxlbA==/?ll=<?php echo $item->cord_y ?>%2C<?php echo $item->cord_x ?>&utm_medium=mapframe&utm_source=maps&z=18.8">
-                    </a>
-                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUVJKxYwA" width="1200" height="400" style="position:relative;">
-                    </iframe>
-                    </div>
-                <?php endforeach ?>
+            <div id="map" style="width: 500px; height: 370px;" class="col-md-8 offset-md-2"></div>
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         </div>
 </div>
+
+<?php foreach ($varInView as $item): ?>
+<script>
+function init () {
+
+start = '<?php echo $item->cord_x ?>,<?php echo $item->cord_y ?>'; // start coordinates
+zoom = 16;                      // start zoom
+id = 'map';
+
+start = start.split(',');       // split coordinates to array
+
+lat = start[0];
+long = start[1];
+coords = [lat, long];
+Map = new ymaps.Map(id, {    // initialize map
+    center: coords,
+    zoom: zoom,
+    controls: ['zoomControl']
+});
+
+/* Adding search on map */
+var search = new ymaps.control.SearchControl({
+    options: {
+        float: 'left',
+        floatIndex: 100,
+        noPlacemark: true
+    }
+});
+Map.controls.add(search);
+
+/* Addung mark on map*/
+mark = new ymaps.Placemark([lat, long],{}, {preset: "islands#redIcon", draggable: true});
+Map.geoObjects.add(mark);
+
+}
+
+ymaps.ready(init);
+</script>
+<?php endforeach ?>
