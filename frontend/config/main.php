@@ -18,6 +18,9 @@ return [
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],
+        'yandexMapsApi' => [
+            'class' => 'mirocow\yandexmaps\Api',
+        ],
         /*'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
