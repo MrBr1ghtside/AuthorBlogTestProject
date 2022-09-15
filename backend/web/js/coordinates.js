@@ -1,7 +1,7 @@
 function init () {
 
     start = '55.45,65.3333'; // start coordinates
-    zoom = 10;                      // start zoom
+    zoom = 16;                      // start zoom
     id = 'map';
 
     start = start.split(',');       // split coordinates to array
