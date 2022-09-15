@@ -50,9 +50,12 @@ function init () {
 }
 /* Save value in form */
 function save (){
-    var new_coords = [coords[0].toFixed(6), coords[1].toFixed(6)];
-    mark.getOverlaySync().getData().geometry.setCoordinates(new_coords);
-    document.getElementById("coordinates").value = new_coords;
+    var new_coords_x = [coords[0].toFixed(6)];
+    var new_coords_y = [coords[1].toFixed(6)];
+    mark.getOverlaySync().getData().geometry.setCoordinates(new_coords_y);
+    mark.getOverlaySync().getData().geometry.setCoordinates(new_coords_x);
+    document.getElementById("cord_x").value = new_coords_x;
+    document.getElementById("cord_y").value = new_coords_y;
 }
 
 ymaps.ready(init);
