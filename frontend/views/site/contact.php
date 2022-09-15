@@ -44,40 +44,41 @@ $this->title = 'Форма обратной связи';
 </div>
 
 <?php foreach ($varInView as $item): ?>
+
 <script>
-function init () {
+    function init () {
 
-start = '<?php echo $item->cord_x ?>,<?php echo $item->cord_y ?>'; // start coordinates
-zoom = 16;                      // start zoom
-id = 'map';
+    start = '<?php echo $item->cord_x ?>,<?php echo $item->cord_y ?>'; // start coordinates
+    zoom = 16;                      // start zoom
+    id = 'map';
 
-start = start.split(',');       // split coordinates to array
+    start = start.split(',');       // split coordinates to array
 
-lat = start[0];
-long = start[1];
-coords = [lat, long];
-Map = new ymaps.Map(id, {    // initialize map
-    center: coords,
-    zoom: zoom,
-    controls: ['zoomControl']
-});
+    lat = start[0];
+    long = start[1];
+    coords = [lat, long];
+    Map = new ymaps.Map(id, {    // initialize map
+        center: coords,
+        zoom: zoom,
+        controls: ['zoomControl']
+    });
 
-/* Adding search on map */
-var search = new ymaps.control.SearchControl({
-    options: {
-        float: 'left',
-        floatIndex: 100,
-        noPlacemark: true
+    var search = new ymaps.control.SearchControl({
+        options: {
+            float: 'left',
+            floatIndex: 100,
+            noPlacemark: true
+        }
+    });
+    Map.controls.add(search);
+
+    /* Addung mark on map*/
+    mark = new ymaps.Placemark([lat, long],{}, {preset: "islands#redIcon", draggable: true});
+    Map.geoObjects.add(mark);
+
     }
-});
-Map.controls.add(search);
 
-/* Addung mark on map*/
-mark = new ymaps.Placemark([lat, long],{}, {preset: "islands#redIcon", draggable: true});
-Map.geoObjects.add(mark);
-
-}
-
-ymaps.ready(init);
+    ymaps.ready(init);
 </script>
+
 <?php endforeach ?>
