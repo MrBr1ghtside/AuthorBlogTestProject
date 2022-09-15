@@ -16,6 +16,10 @@ $this->title = 'Settings';
 
     <h1>Настройка информации</h1>
 
+    <p>
+        <?= Html::a('Изменить информацию', ['update', 'id' => '1'], ['class' => 'btn btn-success']) ?>
+    </p>
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,

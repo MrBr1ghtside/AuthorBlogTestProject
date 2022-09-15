@@ -6,7 +6,8 @@ use yii\helpers\Html;
 /** @var common\models\Settings $model */
 
 $this->title = 'Изменить настройки сайта';
-$this->params['breadcrumbs'][] = 'Настройка';
+$this->params['breadcrumbs'][] = ['label' => 'Настройка', 'url' => ['index']];
+$this->params['breadcrumbs'][] = 'Изменение настроек';
 ?>
 <div class="settings-update">
 
