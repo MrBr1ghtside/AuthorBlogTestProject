@@ -12,6 +12,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\ContactForm;
 
+use common\models\Settings;
 
 /**
  * Site controller
@@ -117,6 +118,7 @@ class SiteController extends Controller
      */
     public function actionContact()
     {
+        $array = Settings::getAll();
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
@@ -130,9 +132,9 @@ class SiteController extends Controller
 
         return $this->render('contact', [
             'model' => $model,
+            'varInView' => $array,
         ]);
     }
-
     /**
      * Displays about page.
      *

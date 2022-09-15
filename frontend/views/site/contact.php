@@ -36,8 +36,15 @@ $this->title = 'Форма обратной связи';
                     <div class="form-group">
                         <?= Html::submitButton('Подтвердить', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                     </div>
-                    
                 <?php ActiveForm::end(); ?>
             </div>
+                <?php foreach ($varInView as $item): ?>
+                    <div style="universal-h2-bckg">
+                    <a href="https://yandex.ru/maps/53/kurgan/house/ulitsa_koli_myagotina_153/YkwYdQNhS0AEQFtvfXh1dXxlbA==/?ll=<?php echo $item->cord_y ?>%2C<?php echo $item->cord_x ?>&utm_medium=mapframe&utm_source=maps&z=18.8">
+                    </a>
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUVJKxYwA" width="1200" height="400" style="position:relative;">
+                    </iframe>
+                    </div>
+                <?php endforeach ?>
         </div>
 </div>
