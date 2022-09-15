@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b3324868f4c074668a7541d89694e67",
+    "content-hash": "4cc661067ce39759fbb5c8c782104388",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -52,6 +52,53 @@
                 "source": "https://github.com/ColorlibHQ/AdminLTE/tree/v2.4.18"
             },
             "time": "2019-08-29T08:20:20+00:00"
+        },
+        {
+            "name": "andrewdanilov/yii2-yandexmap",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AndrewDanilov/yii2-yandexmap.git",
+                "reference": "6242c0133607dcdcaee2e4e819322b9f4984dd69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AndrewDanilov/yii2-yandexmap/zipball/6242c0133607dcdcaee2e4e819322b9f4984dd69",
+                "reference": "6242c0133607dcdcaee2e4e819322b9f4984dd69",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "andrewdanilov\\yandexmap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AndrewDanilov",
+                    "email": "andrewdanilov@gmail.com"
+                }
+            ],
+            "description": "Yandex map",
+            "keywords": [
+                "extension",
+                "map",
+                "yandex",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/AndrewDanilov/yii2-yandexmap/issues",
+                "source": "https://github.com/AndrewDanilov/yii2-yandexmap/tree/1.0.2"
+            },
+            "time": "2020-11-16T10:56:49+00:00"
         },
         {
             "name": "bower-asset/bootstrap",

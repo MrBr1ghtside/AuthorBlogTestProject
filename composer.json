@@ -24,7 +24,8 @@
         "dmstr/yii2-adminlte-asset": "^2.1",
         "mirocow/yii2-yandex-maps" : "dev-master",
         "msvdev/yii2-widget-mappicker": "*",
-        "dektrium/yii2-rbac": "1.0.0-alpha@dev"
+        "dektrium/yii2-rbac": "1.0.0-alpha@dev",
+        "andrewdanilov/yii2-yandexmap": "~1.0.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
