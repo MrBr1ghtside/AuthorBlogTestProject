@@ -26,8 +26,8 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'cord_y') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-outline-secondary']) ?>
+        <?= Html::submitButton('Найти', ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton('Сбросить', ['class' => 'btn btn-outline-secondary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
