@@ -8,8 +8,6 @@ use yii\bootstrap4\Html;
 use yii\bootstrap4\ActiveForm;
 use yii\captcha\Captcha;
 use yii\grid\GridView;
-use mirocow\yandexmaps\Map;
-use mirocow\yandexmaps\Canvas;
 
 $this->title = 'Форма обратной связи';
 ?>
