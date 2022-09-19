@@ -849,3 +849,16 @@
       .footer-bottom-inner p {
         font-size: 14px;
         margin-bottom: 20px; } }
+
+.error-page p {
+  font-size: 18px;
+  text-align: center;
+  color: #222; }
+  
+.error-page img {
+  position: relative;
+  top: 50%;
+  left: 10%;
+  height: 510px;
+  width: 83%;
+}
