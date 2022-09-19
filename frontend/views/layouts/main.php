@@ -27,47 +27,49 @@ AppAsset::register($this);
 </head> 
 <body class="d-flex flex-column h-100">
 	<?php $this->beginBody() ?>
-<headler class="site-headler">
+	<headler class="site-headler">
 	<!-- Navigation -->
-	<?php
-    NavBar::begin([
-        'brandLabel' => Html::img('./images/site-logo.png'),
-        'options' => [
-            'class' => 'navbar navbar-expand-md navbar-dark',
-			'style' => 'background-color: #595959',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
-        'items' => [
-			['label' => 'Home', 'url' => ['/site/index']],
-			['label' => 'Sign in', 'url' => ['/user/registration/register']],
-			Yii::$app->user->isGuest ? // Если пользователь гость, показыаем ссылку "Вход", если он авторизовался "Выход"
+		<?php
+    	NavBar::begin([
+        	'brandLabel' => Html::img('./images/site-logo.png'),
+        	'options' => [
+            	'class' => 'navbar navbar-expand-md navbar-dark',
+				'style' => 'background-color: #595959',
+        	],
+    	]);
+    	echo Nav::widget([
+        	'options' => ['class' => 'navbar-nav'],
+        	'items' => [
+				['label' => 'Home', 'url' => ['/site/index']],
+				['label' => 'Sign in', 'url' => ['/user/registration/register']],
+				Yii::$app->user->isGuest ? // Если пользователь гость, показыаем ссылку "Вход", если он авторизовался "Выход"
 				['label' => 'Login', 'url' => ['/user/security/login']] :
 				[
 					'label' => 'Log out (' . Yii::$app->user->identity->username . ')',
 					'url' => ['/site/logout'],
 					'linkOptions' => ['data-method' => 'post']
+				],
+				['label' => 'Contact', 'url' => ['/site/contact']],
+				['label' => 'Feedbacks', 'url' => ['/feedbacks/feedbacks']],
+				['label' => 'Posts', 'url' => ['/posts/posts']],
 			],
-			['label' => 'Contact', 'url' => ['/site/contact']],
-			['label' => 'Feedbacks', 'url' => ['/feedbacks/feedbacks']],
-			['label' => 'Posts', 'url' => ['/posts/posts']],
-		],
-    ]);
-    NavBar::end();
-    ?>
+    	]);
+    	NavBar::end();
+    	?>
 	<!-- Navigation end -->
-	<main role="main" class="flex-shrink-0">
-    	<div>
-			<?= Breadcrumbs::widget([
-            	'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        	]) ?>
-        	<?= Alert::widget() ?>
-       		<?= $content ?>
-		</div>
-	</main>
+	
+		<main role="main" class="flex-shrink-0">
+    		<div>
+				<?= Breadcrumbs::widget([
+            		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        		]) ?>
+        		<?= Alert::widget() ?>
+       			<?= $content ?>
+			</div>
+		</main>
 
-</headler>
+	</headler>
+	
 	<!-- Footer -->
 	<footer class="site-footer">
 		<div class="site-container">
