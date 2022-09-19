@@ -21,11 +21,7 @@
 		"kartik-v/yii2-widgets": "dev-master",
 		"dvizh/yii2-seo": "@dev",
         "dektrium/yii2-user": "^0.9.14",
-        "dmstr/yii2-adminlte-asset": "^2.1",
-        "mirocow/yii2-yandex-maps" : "dev-master",
-        "msvdev/yii2-widget-mappicker": "*",
-        "dektrium/yii2-rbac": "1.0.0-alpha@dev",
-        "andrewdanilov/yii2-yandexmap": "~1.0.0"
+        "dmstr/yii2-adminlte-asset": "^2.1"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -43,6 +39,9 @@
         "process-timeout": 1800,
         "fxp-asset": {
             "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
         }
     },
     "repositories": [
