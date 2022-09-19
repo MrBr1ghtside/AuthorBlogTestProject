@@ -58,7 +58,7 @@ AppAsset::register($this);
     	?>
 	<!-- Navigation end -->
 	
-		<main role="main" class="flex-shrink-0">
+		<main class="flex-shrink-0">
     		<div>
 				<?= Breadcrumbs::widget([
             		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
