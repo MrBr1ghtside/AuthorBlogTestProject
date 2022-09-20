@@ -11,7 +11,7 @@ AppAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
-<!DOCTYPE html lang="en">
+<!DOCTYPE html>
 <!--
 	Author by FreeHTML5.co
 	Twitter: https://twitter.com/fh5co
