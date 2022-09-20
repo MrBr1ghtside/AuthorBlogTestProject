@@ -37,7 +37,7 @@ $this->title = 'Форма обратной связи';
                 <?php ActiveForm::end(); ?>
             </div>
             <div id="map" style="width: 500px; height: 370px;" class="col-md-8 offset-md-2"></div>
-            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
         </div>
 </div>
 
