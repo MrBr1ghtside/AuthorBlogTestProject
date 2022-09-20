@@ -27,7 +27,8 @@ AppAsset::register($this);
 </head> 
 <body class="d-flex flex-column h-100">
 	<?php $this->beginBody() ?>
-	<headler class="site-headler">
+	
+	<headler>
 	<!-- Navigation -->
 		<?php
     	NavBar::begin([
@@ -57,6 +58,7 @@ AppAsset::register($this);
     	NavBar::end();
     	?>
 	<!-- Navigation end -->
+	</headler>
 	
 		<main class="flex-shrink-0">
     		<div>
@@ -67,8 +69,6 @@ AppAsset::register($this);
        			<?= $content ?>
 			</div>
 		</main>
-
-	</headler>
 	
 	<!-- Footer -->
 	<footer class="site-footer">
