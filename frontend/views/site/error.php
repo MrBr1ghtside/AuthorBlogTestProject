@@ -9,6 +9,7 @@ use yii\helpers\Html;
 
 $this->title = $name;
 ?>
+
 <div class='site-container'>
     <div class="error-page">
         <img src="./images/book-error.png" alt="error image">
