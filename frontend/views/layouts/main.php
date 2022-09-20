@@ -11,7 +11,7 @@ AppAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <!--
 	Author by FreeHTML5.co
 	Twitter: https://twitter.com/fh5co
@@ -28,7 +28,7 @@ AppAsset::register($this);
 <body class="d-flex flex-column h-100">
 	<?php $this->beginBody() ?>
 	
-	<headler>
+	<header>
 	<!-- Navigation -->
 		<?php
     	NavBar::begin([
@@ -58,7 +58,7 @@ AppAsset::register($this);
     	NavBar::end();
     	?>
 	<!-- Navigation end -->
-	</headler>
+	</header>
 	
 		<main class="flex-shrink-0">
     		<div>
