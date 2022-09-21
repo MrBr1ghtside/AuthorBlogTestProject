@@ -2,7 +2,9 @@
 use yii\bootstrap4\Html;
 /** @var yii\web\View $this */
 
-$this->title = 'About me';
+if(!$title = $model->seo->title) {
+    $title = "About me";
+}
 ?>
 
 <section class="fh5co-top-banner">

@@ -6,6 +6,7 @@ use Yii;
 use yii\web\Controller;
 
 use common\models\Authors;
+use common\models\search\AuthorsSearch;
 
 class AuthorsController extends Controller
 {
