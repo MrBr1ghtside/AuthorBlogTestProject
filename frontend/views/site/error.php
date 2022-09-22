@@ -12,7 +12,7 @@ $this->title = $name;
 
 <div class='site-container'>
     <div class="error-page">
-        <img src="./images/book-error.png" alt="error image">
+        <img src="./images/book-error.jpg" alt="error image">
         <p>
         Страница, на которую вы пытались попасть, не существует или была удалена.<br> 
         Пожалуйста, свяжитесь с нами, если вы считаете, что это ошибка сервера. 

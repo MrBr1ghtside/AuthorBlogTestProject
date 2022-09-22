@@ -1,14 +1,17 @@
 @font-face {
   font-family: 'Quicksand-Regular';
-  src: url(../fonts/Quicksand-Regular.ttf); }
+  src: url(../fonts/Quicksand-Regular.ttf);
+  font-display: swap; }
 
 @font-face {
   font-family: 'Quicksand-Light';
-  src: url(../fonts/Quicksand-Light.ttf); }
+  src: url(../fonts/Quicksand-Light.ttf); 
+  font-display: swap; }
 
 @font-face {
   font-family: 'Quicksand-Bold';
-  src: url(../fonts/Quicksand-Bold.ttf); }
+  src: url(../fonts/Quicksand-Bold.ttf); 
+  font-display: swap;}
 
 * {
   margin: 0;
