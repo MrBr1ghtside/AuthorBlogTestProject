@@ -119,7 +119,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-image: url("../images/top-banner-bckg.jpg");
+  background-image: url("../images/top-banner-bckg.webp");
   background-position: center;
   background-size: cover; }
   .fh5co-top-banner::after {
@@ -238,7 +238,7 @@
 
 .about-me-bckg {
   position: absolute;
-  background-image: url("../images/about-me-bckg.jpg");
+  background-image: url("../images/about-me-bckg.webp");
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -453,7 +453,7 @@
   position: relative;
   margin-bottom: 122px;
   padding: 100px 0;
-  background-image: url("../images/book-bckg.jpg");
+  background-image: url("../images/book-bckg.webp");
   background-size: cover;
   background-position: center; }
   .fh5co-counter::after {
@@ -665,7 +665,7 @@
 .fh5co-social {
   position: relative;
   padding: 63px 0;
-  background-image: url("../images/social-bckg.jpg");
+  background-image: url("../images/social-bckg.webp");
   background-size: cover;
   background-position: center; }
   .fh5co-social::after {

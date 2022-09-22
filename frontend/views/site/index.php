@@ -8,7 +8,7 @@ $this->title = 'Author Blog';
 <section class="fh5co-top-banner">
 		<div class="top-banner__inner site-container">
 			<div class="top-banner__image">
-				<img src="./images/top-banner-author.jpg" alt="author image">
+				<img src="./images/top-banner-author.webp" alt="author image">
 			</div>
 			<div class="top-banner__text">
 				<div class="top-banner__text-up">
@@ -31,7 +31,7 @@ $this->title = 'Author Blog';
 		<div class="about-me-inner site-container">
 			<article class="portfolio-wrapper">
 				<div class="portfolio__img">
-					<img src="./images/about-me.jpg" class="about-me__profile" alt="about me profile picture">
+					<img src="./images/about-me.webp" class="about-me__profile" alt="about me profile picture">
 				</div>
 				<div class="portfolio__bottom">
 					<div class="portfolio__name">
@@ -151,7 +151,7 @@ $this->title = 'Author Blog';
 			<div class="blog-slider blog-inner">
 				<div class="single-blog">
 					<div class="single-blog__img">
-						<img src="./images/blog1.jpg" alt="blog image">
+						<img src="./images/blog1.webp" alt="blog image">
 					</div>
 					<div class="single-blog__text">
 						<h4>The Journey Under the Waves</h4>
