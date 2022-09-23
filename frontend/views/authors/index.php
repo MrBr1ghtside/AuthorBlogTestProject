@@ -1,10 +1,10 @@
 <?php
-use yii\bootstrap4\Html;
-/** @var yii\web\View $this */
+use dvizh\seo\widgets\SeoForm;
 
-if(!$title = $model->seo->title) {
-    $title = "About me";
-}
+use yii\helpers\Html;
+use yii\grid\GridView;
+
+$this->title = 'About me';
 ?>
 
 <section class="fh5co-top-banner">
