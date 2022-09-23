@@ -2,7 +2,19 @@
 use yii\bootstrap4\Html;
 /** @var yii\web\View $this */
 
+if (!$this->title = $model->seo->title) {
     $this->title = $model->title;
+}
+
+$this->registerMetaTag([
+    'name' => 'keywords',
+    'content' => $model->seo->keywords,
+]);
+
+$this->registerMetaTag([
+    'name' => 'description',
+    'content' => $model->seo->description,
+]);
 ?>
 
 <section class="fh5co-books">

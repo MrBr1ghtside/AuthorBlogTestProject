@@ -35,6 +35,9 @@ class Posts extends ActiveRecord
                     'attribute' => 'title',
                     'slugAttribute' => 'slug',
             ],
+            'seo' => [
+                'class' => 'dvizh\seo\behaviors\SeoFields',
+            ],
         ];
     }
 
