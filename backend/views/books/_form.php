@@ -18,6 +18,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 
+    <?=\dvizh\seo\widgets\SeoForm::widget([
+        'model' => $model, 
+        'form' => $form, 
+    ]); ?>
+
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>

@@ -49,6 +49,9 @@ class Books extends ActiveRecord
                 'attribute' => 'book_name',
                 'slugAttribute' => 'slug',
             ],
+            'seo' => [
+                'class' => 'dvizh\seo\behaviors\SeoFields',
+            ],
         ];
     }
 
