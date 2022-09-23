@@ -5,7 +5,6 @@ use yii\bootstrap4\Html;
 $this->title = 'Books';
 ?>
 
-
 <section class="fh5co-books">
 		<div class="site-container">
 			<h2 class="universal-h2 universal-h2-bckg">My books</h2>
