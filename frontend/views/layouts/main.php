@@ -12,12 +12,6 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<!--
-	Author by FreeHTML5.co
-	Twitter: https://twitter.com/fh5co
-	Facebook: https://fb.com/fh5co
-	URL: https://freehtml5.co
--->
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +37,7 @@ AppAsset::register($this);
         	'items' => [
 				['label' => 'Home', 'url' => ['/site/index']],
 				['label' => 'Sign in', 'url' => ['/user/registration/register']],
-				Yii::$app->user->isGuest ? // Если пользователь гость, показыаем ссылку "Вход", если он авторизовался "Выход"
+				Yii::$app->user->isGuest ?
 				['label' => 'Login', 'url' => ['/user/security/login']] :
 				[
 					'label' => 'Log out (' . Yii::$app->user->identity->username . ')',
