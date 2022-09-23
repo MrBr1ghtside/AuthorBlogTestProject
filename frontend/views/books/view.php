@@ -1,8 +1,9 @@
 <?php
 use yii\bootstrap4\Html;
 /** @var yii\web\View $this */
-
-$this->title = $model->seo->title;
+if (!$this->title = $model->seo->title) {
+    $this->title = $model->book_name;
+}
 
 $this->registerMetaTag([
     'name' => 'keywords',
