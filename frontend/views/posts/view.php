@@ -1,5 +1,6 @@
 <?php
 use yii\bootstrap4\Html;
+use yii\widgets\Breadcrumbs;
 /** @var yii\web\View $this */
 
 if (!$this->title = $model->seo->title) {
@@ -15,6 +16,9 @@ $this->registerMetaTag([
     'name' => 'description',
     'content' => $model->seo->description,
 ]);
+
+$this->params['breadcrumbs'][] = ['label' => 'Посты', 'url' => ['posts']];
+$this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'slug' => $model->slug]];
 ?>
 
 <section class="fh5co-books">

@@ -15,6 +15,8 @@ $this->registerMetaTag([
     'content' => $model->seo->description,
 ]);
 
+$this->params['breadcrumbs'][] = ['label' => 'Книги', 'url' => ['books']];
+$this->params['breadcrumbs'][] = ['label' => $model->book_name, 'url' => ['view', 'slug' => $model->slug]];
 ?>
 
 <section class="fh5co-books">

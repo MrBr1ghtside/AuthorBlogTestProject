@@ -3,6 +3,8 @@ use yii\bootstrap4\Html;
 /** @var yii\web\View $this */
 
 $this->title = 'Books';
+
+$this->params['breadcrumbs'][] = ['label' => 'Книги', 'url' => ['books']];
 ?>
 
 <section class="fh5co-books">
