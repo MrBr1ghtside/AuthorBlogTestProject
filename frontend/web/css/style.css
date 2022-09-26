@@ -854,3 +854,31 @@
   height: 510px;
   width: 83%;
 }
+
+div.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.paglink {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.paglink-active {
+  color: white;
+  background-color: rgb(209, 209, 209);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.pagination li a:hover:not(.active) {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  text-decoration: none;
+}
