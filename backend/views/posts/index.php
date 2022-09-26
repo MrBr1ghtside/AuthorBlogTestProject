@@ -4,6 +4,8 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
+use kartik\date\DatePicker;
+use yii\data\ActiveDataProvider;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\PostsSearch */
@@ -30,12 +32,21 @@ $this->title = 'Посты';
             'id',
             'title',
             'text',
-            'slug',
+            'slug',        
             [
-                'attribute' =>'created_at',
+                'attribute' => 'created_at',
                 'value' => function($model) {
-                    return date('d.m.Y H:i', $model->created_at);
-                }
+                    return date('d.m.Y', $model->created_at);
+                },
+                'filter' => DatePicker::widget([
+                    'name' => 'date-picker-employment',
+                    'type' => DatePicker::TYPE_INPUT,
+                    'pluginOptions' => [
+                        'format' => 'dd.mm.yyyy',
+                        'autoclose' => true,
+                        'todayHighlight' => true,
+                    ],
+                ]),
             ],
         ],
     ]); ?>

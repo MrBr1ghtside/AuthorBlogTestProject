@@ -7,6 +7,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\Posts;
 use common\models\search\PostsSearch;
+use yii\data\ActiveDataProvider;
 
 /**
  * PostsController implements the CRUD actions for Posts model.
