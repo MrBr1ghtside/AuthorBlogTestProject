@@ -17,7 +17,8 @@ class PostsSearch extends Posts
     public function rules()
     {
         return [
-            [['id', 'created_at'], 'integer'],
+            [['id'], 'integer'],
+            [['created_at'], 'date', 'format' => 'dd.mm.yyyy'],
             [['title', 'text', 'slug'], 'safe'],
         ];
     }
@@ -59,12 +60,12 @@ class PostsSearch extends Posts
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'created_at' => $this->created_at,
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'text', $this->text])
-            ->andFilterWhere(['like', 'slug', $this->slug]);
+            ->andFilterWhere(['like', 'slug', $this->slug])
+            ->andFilterWhere(['like', 'created_at', $this->created_at]);
 
         return $dataProvider;
     }
