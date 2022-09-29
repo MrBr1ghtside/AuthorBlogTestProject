@@ -36,10 +36,14 @@ $this->title = 'Посты';
                     return date('d.m.Y', $model->created_at);
                 },
                 'filter' => DatePicker::widget([
-                    'name' => 'date-picker',
+                    'name' => 'created_at',
+                    'model' => $searchModel,
+                    'attribute' => 'created_at',
                     'type' => DatePicker::TYPE_BUTTON,
                     'pluginOptions' => [
-                        'format' => 'dd.mm.yyyy',
+                        'autoclose'=> true,
+                        'convertFormat' => true,
+                        'format' => 'd.m.yyyy',
                         'todayHighlight' => true,
                     ],
                 ]),

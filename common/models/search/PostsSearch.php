@@ -17,8 +17,7 @@ class PostsSearch extends Posts
     public function rules()
     {
         return [
-            [['id'], 'integer'],
-            [['created_at'], 'date', 'format' => 'dd.mm.yyyy'],
+            [['id', 'created_at'], 'integer'],
             [['title', 'text', 'slug'], 'safe'],
         ];
     }
