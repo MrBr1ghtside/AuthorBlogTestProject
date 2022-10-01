@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 's
                 <div class="col col-md-8 offset-md-2">
                     <h1><?= $model->title ?></h1>
                     <p>
-                        <?= date('d.m.Y', $model->created_at) ?>
+                        <?php echo Yii::$app->formatter->asDate($model->created_at) ?>
                     </p>
                     <span><?= $model->text ?></span>
                 </div>

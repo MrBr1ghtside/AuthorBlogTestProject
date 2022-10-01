@@ -14,7 +14,7 @@ $this->title = 'Posts';
                             <?php foreach ($posts as $item): ?>
                                 <h3><?= Html::a($item['title'], ['posts/view', 'slug' => $item['slug']]) ?></h3>
                                 <p>
-                                    <?= date('d.m.Y', $item->created_at) ?>
+                                    <?php echo Yii::$app->formatter->asDate($item->created_at) ?>
                                 </p>
                             <?php endforeach ?>
                         </div>

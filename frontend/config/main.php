@@ -55,6 +55,13 @@ return [
         'class'=> 'yii\swiftmailer\Mailer'
     ],
 
+    'formatter' => [
+        'dateFormat' => 'dd.MM.yyyy',
+        'decimalSeparator' => ',',
+        'thousandSeparator' => ' ',
+        'currencyCode' => 'EUR',
+   ],
+
     ],
     /*'modules' => [
         'user' => [

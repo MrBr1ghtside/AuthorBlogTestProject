@@ -32,18 +32,15 @@ $this->title = 'Посты';
             'slug',        
             [
                 'attribute' => 'created_at',
-                'value' => function($model) {
-                    return date('d.m.Y', $model->created_at);
-                },
+                'value' => 'created_at',
                 'filter' => DatePicker::widget([
                     'name' => 'created_at',
                     'model' => $searchModel,
                     'attribute' => 'created_at',
-                    'type' => DatePicker::TYPE_BUTTON,
+                    'type' => DatePicker::TYPE_INPUT,
                     'pluginOptions' => [
                         'autoclose'=> true,
-                        'convertFormat' => true,
-                        'format' => 'd.m.yyyy',
+                        'format' => 'yyyy-mm-dd',
                         'todayHighlight' => true,
                     ],
                 ]),

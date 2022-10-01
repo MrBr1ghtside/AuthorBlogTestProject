@@ -15,7 +15,7 @@ class m220812_090214_create_posts_table extends Migration
         $this->createTable('{{%posts}}', [
             'id' => $this->primaryKey(),
             'title' => $this->string(50)->notNull(),
-            'created_at' => $this->integer(),
+            'created_at' => $this->date(),
             'text' => $this->string(),
         ]);
     }

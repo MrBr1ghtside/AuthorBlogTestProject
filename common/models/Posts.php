@@ -4,6 +4,7 @@ namespace common\models;
 
 use Yii;
 use Yii\db\ActiveRecord;
+use yii\db\Expression;
 use yii\behaviors\TimestampBehavior;
 use yii\behaviors\SluggableBehavior;
 
@@ -27,8 +28,10 @@ class Posts extends ActiveRecord
             [
                 'class' => TimestampBehavior::className(),
                 'createdAtAttribute' => 'created_at',
-                'updatedAtAttribute' => false,
-                'value' => time(),
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['created_at'],
+                ],
+                 'value' => new Expression('NOW()'),
             ],
             [
                     'class' => SluggableBehavior::className(),
@@ -53,7 +56,7 @@ class Posts extends ActiveRecord
     {
         return [
             [['title'], 'required'],
-            [['created_at'], 'integer'],
+            [['created_at'], 'safe'],
             [['title'], 'string', 'max' => 50],
             [['text', 'slug'], 'string', 'max' => 255],
         ];
