@@ -112,18 +112,6 @@ AppAsset::register($this);
 				</div>
 			</div>
 		</div>
-		<div class="footer-bottom">
-			<div class="site-container footer-bottom-inner">
-				<p>© 2019 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
-				<div class="footer-bottom__img">
-					<img src="./images/footer-mastercard.png" alt="footer image">
-					<img src="./images/footer-paypal.png" alt="footer image">
-					<img src="./images/footer-visa.png" alt="footer image">
-					<img src="./images/footer-fedex.png" alt="footer image">
-					<img src="./images/footer-dhl.png" alt="footer image">
-				</div>
-			</div>
-		</div>
 	</footer>
 	<!-- Footer end -->
 
