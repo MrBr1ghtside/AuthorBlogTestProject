@@ -33,6 +33,7 @@ use yii\helpers\Url;
                     ['label' => 'Книги', 'icon' => 'database', 'url' => ['/books'],],
                     ['label' => 'Отзывы', 'icon' => 'database', 'url' => ['/feedbacks'],],
                     ['label' => 'Посты', 'icon' => 'database', 'url' => ['/posts'],],
+                    ['label' => 'Заявки', 'icon' => 'database', 'url' => ['/contact'],],
                 ],
             ]
         ) ?>

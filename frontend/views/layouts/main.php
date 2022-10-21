@@ -6,6 +6,8 @@ use yii\bootstrap4\Html;
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use yii\helpers\Url;
+use common\models\Contact;
+use yii\widgets\ActiveForm;
 
 AppAsset::register($this);
 
@@ -84,6 +86,41 @@ AppAsset::register($this);
 							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
 						</div>
 					</div>
+				</div>
+				<div class="footer-contact-form">
+					<h5>Contact Form</h5>
+					<?php
+            $model = new Contact();
+            $form = ActiveForm::begin([
+                'id' => 'contact-form',
+                'action' => ['site/contact'],
+                'method' => 'post',
+                ]); ?>
+
+			<?= $form->field($model, 'name')->textInput(['autofocus' => true, 'class' => 'form-control'])
+                ->label(Yii::t('app',''))->input('name', ['placeholder' => "Ваше имя"]) ?>
+
+            <?= $form->field($model, 'email')->textInput(['class' => 'form-control'])
+                ->label(Yii::t('app',''))->input('email', ['placeholder' => "Электронная почта"]) ?>
+
+            <?= $form->field($model, 'phone')->textInput(['class' => 'form-control'])
+                ->label(Yii::t('app',''))->widget(\yii\widgets\MaskedInput::className(), ['mask' => '+7 (999) 999 99 99'])
+                ->input('phone', ['placeholder' => "Контактный номер"]) ?>
+            
+			<?= Html::submitButton('Отправить', ['class' => 'primary-btn']) ?>
+            <?php ActiveForm::end(); ?>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2019 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
+				<div class="footer-bottom__img">
+					<img src="./images/footer-mastercard.png" alt="footer image">
+					<img src="./images/footer-paypal.png" alt="footer image">
+					<img src="./images/footer-visa.png" alt="footer image">
+					<img src="./images/footer-fedex.png" alt="footer image">
+					<img src="./images/footer-dhl.png" alt="footer image">
 				</div>
 			</div>
 		</div>

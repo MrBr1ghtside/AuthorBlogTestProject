@@ -11,7 +11,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use frontend\models\ContactForm;
-
+use common\models\Contact;
 use common\models\Settings;
 
 /**
@@ -116,7 +116,7 @@ class SiteController extends Controller
      *
      * @return mixed
      */
-    public function actionContact()
+    /*public function actionContact()
     {
         $array = Settings::getAll();
         $model = new ContactForm();
@@ -134,7 +134,7 @@ class SiteController extends Controller
             'model' => $model,
             'varInView' => $array,
         ]);
-    }
+    }*/
     /**
      * Displays about page.
      *
@@ -254,5 +254,13 @@ class SiteController extends Controller
         return $this->render('resendVerificationEmail', [
             'model' => $model
         ]);
+    }
+
+    public function actionContact()
+    {
+        $model = new Contact();
+        $model->load(Yii::$app->request->post()) && $model->save();
+        return $this->redirect(['index']);
+
     }
 }
