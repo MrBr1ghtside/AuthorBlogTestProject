@@ -19,7 +19,7 @@ $this->title = 'Author Blog';
 					<h2 class="top-banner__h2">Smith</h2>
 					<span class="brand-span">Author, Writer, Traveler</span>
 				</div>
-				<p>One Man. One Mission. Can He Go Beyond? One Man. One Mission. Can He Go Beyond?</p>
+				<p>One Man. One Mission. Can He Go Beyond?</p>
 				<?= Html::a('Read bio >', ['authors/authors'], ['class' => 'brand-button']) ?>
 			</div>
 		</div>
@@ -186,7 +186,7 @@ $this->title = 'Author Blog';
 		</div>
 	</section>
 	<!-- Blog end -->
-	
+
 	<!-- Social -->
 	<section class="fh5co-social">
 		<div class="site-container">
