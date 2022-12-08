@@ -46,7 +46,7 @@ $this->title = 'Author Blog';
 					<div class="about-me-single-slide">
 						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
 						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, 
-						and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services,
+						and the British Fantasy Society journal Dark Horizon. He is also CEO of a company, specializing in custom book publishing and social media marketing services,
 						have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, 
 						The Spirit of Poe, and have created a community for authors to learn and connect.</p>
 						<h4>Author</h4>
